@@ -1,6 +1,7 @@
 # L1 MET Response/Resolution for CMS Phase-2
 
 It requires CMSSW for Phase-2 Level-1 study
+
 Please follow basic instruction here: 
 https://github.com/p2l1pfp/FastPUPPI/tree/11_1_X/NtupleProducer
 
@@ -25,4 +26,4 @@ cd P2L1MET_Resolution
 
 We had done MET resolution study for two different signal processes, Drell-Yan and VBF(HtoInv). Since the processes have different final state particles, they require two strategies. Therefore I made two types of scripts. One for DY and another for VBF. Of course you can merge the two scripts and develop them as one, if you use proper options.
 
-* Sorry for the dizzy outputs. Unfortunately I did't have enough time to tidy the codes up. It would be better to save all information with TTree and make the outputs as one root file. 
+Note: Sorry for the dizzy outputs. Unfortunately I did't have enough time to tidy the codes up. It would be better to save all information with TTree and make the outputs as one root file. 
