@@ -28,11 +28,14 @@ We had done MET resolution study for two different signal processes, Drell-Yan a
 
 L1 samples should be placed in `FastPUPPI/NtupleProducer/python/`
 
+There are 2 steps to produce MET response/resolution plots
+
+1. Produce MET and particle information
 Since it had been developed based on trigger performance plotter, it always requires Minbias sample as background. `run_info_DY.sh` runs for DY signal and `run_info_VBF.sh` runs for VBF signal.
 
 Here is an example command for DY signal.
 ```
-./run_info_DY.sh <DY sample name> <Minbias sample name> <JEC file name> <Output directory name>
+./run_info_DY.sh <DY sample name> <Minbias sample name> <JEC file name> <Output directory name (default as txt_DY)>
 ```
 It will produce text files of raw MET, type-1 MET and final state paritlces (2 muons for DY or 4 neutrinos for VBF) information. 
 
@@ -41,3 +44,14 @@ Note 1: If you would like to check trigger performance with Type-1 MET, remove c
 Note 2: Originally, the script was designed to work for PU0 and PU200 at the same time, but all lines related to PU0 were deleted to prevent confusion. If you would like to run this script for PU0 sample, I think it's okay to put PU0 sample instead of PU200 sample and it might give PU0 result.
 
 Note 3: Sorry for the dizzy outputs. Unfortunately I did't have enough time to tidy the codes up. It would be better to save all information with TTree and make the outputs as one root file. 
+
+2. Produce MET plots
+
+Before you go though to this step, please be sure you have complete text files.
+
+Here is an example command for DY.
+```
+./run_mets_DY <text file directory name (default as txt_DY)> <name of directory where you want to save (default as met_res_DY)>
+```
+
+This will produce MET response, perpendicular and parallel resolution plots as pdf file and one root file including all of them.
