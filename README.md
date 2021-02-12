@@ -34,7 +34,7 @@ Here is an example command for DY signal.
 ```
 ./run_info_DY.sh <DY sample name> <Minbias sample name> <JEC file name> <Output directory name>
 ```
-It will produce text files of raw MET, type-1 MET and final state paritlces (2 muons for DY and 4 neutrinos for VBF) information. 
+It will produce text files of raw MET, type-1 MET and final state paritlces (2 muons for DY or 4 neutrinos for VBF) information. 
 
 Note 1: If you would like to check trigger performance with Type-1 MET, remove comment-out lines. Then it will give you several plots. e.g. ROC and turn-ons.
 
