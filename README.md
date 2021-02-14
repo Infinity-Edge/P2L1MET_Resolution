@@ -55,4 +55,4 @@ Here is an example command.
 ./run_mets.sh <text file directory name (default as txt_DY)> <name of directory where you want to save (default as met_res_DY)>
 ```
 
-This will produce MET response, perpendicular and parallel resolution plots as pdf file and one root file including all of them.
+This will produce MET response, perpendicular and parallel resolution plots as pdf file.
