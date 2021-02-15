@@ -52,7 +52,7 @@ Before you go though to this step, please be sure you have complete text files.
 
 Here is an example command.
 ```
-./run_mets.sh <text file directory name (default as txt_DY)> <name of directory where you want to save (default as met_res_DY)>
+./run_mets.sh <text file directory name (default as txt_DY)> <name of directory where you want to save (default as met_res_DY)> <signal process type (DY or VBF)>
 ```
 
 This will produce MET response, perpendicular and parallel resolution plots as pdf file.
